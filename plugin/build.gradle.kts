@@ -20,3 +20,8 @@ gradlePlugin {
         implementationClass = "ca.allanwang.playground.gradle.plugin.TestPlugin"
     }
 }
+
+dependencies {
+    compileOnly(gradleApi())
+    compileOnly("com.android.tools.build:gradle:4.2.2")
+}
